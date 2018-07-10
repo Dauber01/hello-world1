@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        自定义配置bean
+    -->
+    <bean id="helloService" class="java.util.HashMap" scope="singleton">
+        <constructor-arg>
+            <map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="111" value="222" />
+                <entry key="222" value="333" />
+                <entry key="333" value="444" />
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <!--<bean id="userController" class="com.wanxl.spring.cloud.initializrstart.web.UserController" scope="singleton">
+        <property name="helloService" ref="helloService" />
+    </bean>-->
+
+</beans>
