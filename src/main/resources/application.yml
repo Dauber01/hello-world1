@@ -1,0 +1,7 @@
+weather:
+  requestUrl: http://wthrcdn.etouch.cn/weather_mini?
+spring:
+  redis:
+    host: 139.129.206.96
+    port: 6379
+    password: sakura

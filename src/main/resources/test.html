@@ -1,0 +1,14 @@
+<html>
+    <button class="previewBtn">sadkfj</button>
+    <script src="jquery.min.js" type="text/javascript"></script>
+</html>
+<script>
+    $(".previewBtn").click(function () {
+        var curWwwPath=window.document.location.href;
+        var pathName=window.document.location.pathname;
+        var pos=curWwwPath.indexOf(pathName);
+        var localhostPath=curWwwPath.substring(0,pos);
+        window.open(localhostPath+"/pdfjs/web/viewer.html?file="+attachmentUrl + "localhost:8080/preview");
+
+    });
+</script>
